@@ -1,5 +1,10 @@
 #Online Shopping Center
 from modules.GUI import GUI
 
-#Display mainWindow
-GUI.showMainWindow()
+
+def main():
+
+    #Display mainWindow
+    GUI.showMainWindow()
+
+main()
