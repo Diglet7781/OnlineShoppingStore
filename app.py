@@ -1,4 +1,6 @@
 #Online Shopping Center
+import sys
+
 from modules.GUI import GUI
 from modules.Customer import Customer
 from modules.Account import Account
@@ -24,6 +26,12 @@ def main():
     if account.login():
         GUI.displayEmptyLines(1)
         print(f"Welcome to OSC {account.firstName} {account.lastName} ")
+        GUI.showOptions()
+        option = input("Enter option: ")
+        if int(option) == 3:
+            GUI.loginCredential = []
+            print("Logout")
+            sys.exit()  
     else:
         print("Invalid Credentials")
         print("Please, try again later!")
