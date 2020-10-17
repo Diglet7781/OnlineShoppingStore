@@ -2,6 +2,9 @@
 from modules.GUI import GUI
 from modules.Customer import Customer
 from modules.Account import Account
+from modules.Inventory import *
+from modules.Cart import Cart
+
 
 def main():
 
@@ -24,8 +27,22 @@ def main():
     if account.login():
         GUI.displayEmptyLines(1)
         print(f"Welcome to OSC {account.firstName} {account.lastName} ")
+        print("Here is the current items available: \n")
+        c_cart = Cart()
+        Inv = Inventory()
+
+        user_item = input("Please enter the item you would like to buy:")
+
+        Inventory.item_verify(c_cart,Inv.get_itemDB(), user_item)
+
     else:
         print("Invalid Credentials")
         print("Please, try again later!")
+        exit_input = input('')
+        if exit_input:
+            exit(0)
+
+
+
 
 main()
