@@ -1,4 +1,6 @@
 #Online Shopping Center
+import sys
+
 from modules.GUI import GUI
 from modules.Customer import Customer
 from modules.Account import Account
@@ -42,7 +44,12 @@ def main():
         if exit_input:
             exit(0)
 
-
+        # GUI.showOptions()
+        # option = input("Enter option: ")
+        # if int(option) == 3:
+        #     GUI.loginCredential = []
+        #     print("Logout")
+        #     sys.exit()
 
 
 main()
