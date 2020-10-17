@@ -14,7 +14,7 @@ class Account:
         users = json.load(userList)
 
         for user in users['users']:
-            if user["username"] == self.username and user["password"] == user["password"]:
+            if user["username"] == self.username and user["password"] == self.password:
                 self.firstName = user["firstName"]
                 self.lastName = user["lastName"]
                 self.email = user["email"]
