@@ -2,7 +2,7 @@
     "users": [
         {
             "username":"admin",
-            "password":"passoword",
+            "password":"password",
             "firstName": "john",
             "lastName": "doe",
             "email":"admin@email.com"
@@ -10,7 +10,7 @@
         },
         {
             "username":"user",
-            "password":"passoword",
+            "password":"password1",
             "firstName": "jane",
             "lastName": "doe",
             "email": "user@email.com"

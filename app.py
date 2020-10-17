@@ -11,14 +11,14 @@ def main():
 
     #Display LoginWindow
     GUI.showLoginWindow()
-   
+
 
     #instantiate account object
     account = Account()
 
     #set up login credentials
-    account.username = GUI.loginCredentials[0]["username"]
-    account.password = GUI.loginCredentials[0]["password"]
+    account.username = GUI.loginCredentials[0]["username"].strip()
+    account.password = GUI.loginCredentials[0]["password"].strip()
 
     account.login()
     if account.login():
