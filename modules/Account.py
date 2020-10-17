@@ -26,4 +26,6 @@ class Account:
 
 
     def logout(self):
-        print("Logout method")
+        import sys
+        print("Logout Success")
+        sys.exit()

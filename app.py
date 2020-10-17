@@ -29,27 +29,22 @@ def main():
     if account.login():
         GUI.displayEmptyLines(1)
         print(f"Welcome to OSC {account.firstName} {account.lastName} ")
-        print("Here is the current items available: \n")
-        c_cart = Cart()
-        Inv = Inventory()
-
-        user_item = input("Please enter the item you would like to buy:")
-
-        Inventory.item_verify(c_cart,Inv.get_itemDB(), user_item)
-
+        GUI.showOptions()
+        option = int(input("Enter option: "))
+        if option == 3:
+            GUI.loginCredential = []
+            account.logout()
+        elif option == 1:
+            print("Here is the current items available: \n")
+            c_cart = Cart()
+            Inv = Inventory()
+            user_item = input("Please enter the item you would like to buy:")
+            Inventory.item_verify(c_cart,Inv.get_itemDB(), user_item)
     else:
         print("Invalid Credentials")
         print("Please, try again later!")
         exit_input = input('')
         if exit_input:
             exit(0)
-
-        # GUI.showOptions()
-        # option = input("Enter option: ")
-        # if int(option) == 3:
-        #     GUI.loginCredential = []
-        #     print("Logout")
-        #     sys.exit()
-
 
 main()
