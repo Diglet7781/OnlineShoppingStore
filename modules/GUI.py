@@ -8,15 +8,15 @@ class GUI:
         print("***************** WELCOME TO ONLINE SHOPPING CENTER ******************")
         print("**********************************************************************")
         print("**********************************************************************")
-    
+
     @classmethod
     def displayEmptyLines(cls, numLine=1):
         for i in range(numLine):
             print("                                                ")
-    
+
     @classmethod
     def showLoginWindow(cls):
-        
+
         print("############################ Login ###################################")
         username = input("Enter username :")
         password= input("Enter password :")

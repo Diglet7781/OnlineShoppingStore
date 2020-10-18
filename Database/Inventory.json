@@ -1,0 +1,6 @@
+{ "items": [
+{"item": "Toothpaste", "item_description": "Used for brushing your teeth", "item_id": "1", "price": "2.00", "Quantity": "5"},
+{"item": "Transformer", "item_description": "Toy for playing", "item_id": "2", "price": "12.00", "Quantity": "8"},
+{"item": "CSE Book", "item_description": "CSE book for learning", "item_id": "3", "price": "20.00", "Quantity": "4"},
+{"item": "Camera", "item_description": "For taking pictures", "item_id": "4", "price": "75.00", "Quantity": "9"}
+]}
